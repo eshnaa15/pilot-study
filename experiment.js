@@ -133,7 +133,7 @@ blockOrder.forEach(blockKey => {
           let responses = [];
 
           const showNextQuestion = () => {
-            if (currentQ < questions.length) {
+            if (currentQ < audioQuestions.length) {
               box.innerHTML = `<p><strong>${audioQuestions[currentQ]}</strong></p><p>Press 1 or 2</p>`;
               jsPsych.pluginAPI.getKeyboardResponse({
                 callback_function: info => {
