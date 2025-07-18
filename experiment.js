@@ -79,9 +79,15 @@ blockOrder.forEach(blockKey => {
         stimulus: `
           <p style='font-size:12px;'>BLOCK: ${blockKey.toUpperCase()} (Image)</p>
           <p><b>Review both images and answer the question below:</b></p>
-          <div style='display:flex; justify-content:space-around;'>
+	  <div style='display:flex; justify-content:space-around; align-items: center;'>
+           <div style='text-align: center;'>
+            <p><strong>Image 1</strong></p>
             <img src='all_images/${img1}' height='200'>
+           </div>
+           <div style='text-align: center;'>
+            <p><strong>Image 2</strong></p>
             <img src='all_images/${img2}' height='200'>
+           </div>
           </div>
           <p><strong>${question}</strong></p>
           <p>Press 1 for the left image or 2 for the right image.</p>
